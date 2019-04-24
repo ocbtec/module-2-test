@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+}
+
+.color-blue {
+    color: blue;
+}
+
+main {
+    padding-top: 10em;
+}
+
+.background {
+    width: 200px;
+    height: 200px;
+    background-image: url(images/tree.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    position: fixed;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+span {
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid black;
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+.container {
+    border: 2px solid black;
+    display: flex;
+}
+
+.item {
+    border: 2px solid blue;
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    flex-grow: 1;
+}
+
+.mediaquery {
+    border: 2px solid black;
+}
+
+.box {
+    border: 2px solid black;
+    height: 20rem;
+    width: 20rem;
+}
+
+.relative,
+.absolute {
+    border: 2px solid blue;
+}
+
+.relative {
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    float: right;
+}
+
+.absolute {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    bottom: 0;
+}
+
+.images {
+    display: grid;
+    grid-template: 1fr 0fr / 1fr 1fr 1fr;
+}
+
+img[alt="Image 2"] {
+    border: 1px solid blue;
+    padding: 2%;
+}
+
+div > span:nth-child(even) {
+    background-color: #1a00af;
+}
+
+p:nth-child(2) {
+    background: #a52020;
+}
+
+.mediaquery {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+@media only screen and (min-width: 500px) {
+    .mediaquery {
+        background-color: blue;
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media only screen and (min-width: 762px) {
+    .mediaquery {
+        background-color: yellow;
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .mediaquery {
+        background-color: red;
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .mediaquery {
+        background-color: purple;
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    border: 1px solid grey;
+    grid-gap: 5px;
+}
+
+.cell {
+    border: 1px solid #196d20;
+}
+
+.two {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.three {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.seven {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.headline {
+    color: #a52020;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+footer > ul > li > a:visited {
+    color: #d400ff;
+}
+
+footer > ul > li > a:hover {
+    color: green;
+}
+
+main > ol > li,
+main > ol > ul > li {
+    text-decoration: line-through;
+}
